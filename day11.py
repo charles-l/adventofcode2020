@@ -41,4 +41,4 @@ while True:
         break
     m = m1
 
-print(sum(sum(1 for x in r if x == '#') for r in m))
+print(sum(x.count('#') for r in m))
