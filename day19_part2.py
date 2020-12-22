@@ -1,6 +1,6 @@
 from boltons.iterutils import split
 import re
-with open('test_day19') as f:
+with open('input_day19') as f:
     lines = [x.strip() for x in f.readlines()]
 
 raw_rules = lines[:lines.index('')]
