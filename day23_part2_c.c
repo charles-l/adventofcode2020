@@ -55,9 +55,8 @@ int main() {
       }
     }
 
-    for(int i = 2; i >= 0; i--) {
-      insert_next(next_arr, dest_cup, picked_up[i]);
-    }
+    next_arr[picked_up[2]] = next_arr[dest_cup];
+    next_arr[dest_cup] = picked_up[0];
 
     current_cup = next_arr[current_cup];
   }

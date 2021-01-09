@@ -33,7 +33,8 @@ for m in range(moves):
         if dest_cup < min_cup:
             dest_cup = max_cup
 
-    for x in reversed(picked_up):
-        insert_next(dest_cup, x)
+    next_arr[picked_up[-1]] = next_arr[dest_cup]
+    next_arr[dest_cup] = picked_up[0]
+
     current_cup = next_arr[current_cup]
 print(next_arr[1] * next_arr[next_arr[1]])
